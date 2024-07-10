@@ -889,11 +889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\OneDrive\\Desktop\\Prueba Tecnica\\Inalambria.PruebaTecnicaApi\\Inalambria.PruebaTecnica\\Inalambria.PruebaTecnica.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\OneDrive\\Desktop\\Prueba Tecnica\\Inalambria.PruebaTecnica\\Inalambria.PruebaTecnica\\Inalambria.PruebaTecnica.csproj",
       "projectName": "Inalambria.PruebaTecnica",
-      "projectPath": "C:\\Users\\USER\\OneDrive\\Desktop\\Prueba Tecnica\\Inalambria.PruebaTecnicaApi\\Inalambria.PruebaTecnica\\Inalambria.PruebaTecnica.csproj",
+      "projectPath": "C:\\Users\\USER\\OneDrive\\Desktop\\Prueba Tecnica\\Inalambria.PruebaTecnica\\Inalambria.PruebaTecnica\\Inalambria.PruebaTecnica.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\OneDrive\\Desktop\\Prueba Tecnica\\Inalambria.PruebaTecnicaApi\\Inalambria.PruebaTecnica\\obj\\",
+      "outputPath": "C:\\Users\\USER\\OneDrive\\Desktop\\Prueba Tecnica\\Inalambria.PruebaTecnica\\Inalambria.PruebaTecnica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
