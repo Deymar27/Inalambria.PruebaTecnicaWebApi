@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inalambria.PruebaTecnica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0c88a4560978d6a18c53fa4e85f16713f5751f71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+274551fe1bc947d17b745a7ee5076a59b062d89e")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inalambria.PruebaTecnica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inalambria.PruebaTecnica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
