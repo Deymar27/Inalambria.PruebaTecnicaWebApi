@@ -6,7 +6,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
-var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
+string jwtKey = "key_prueba_tecnica_1234567890123456key_prueba_tecnica_1234567890123456"; // builder.Configuration["Jwt:Key"];
+var key =  Encoding.ASCII.GetBytes(jwtKey);
 
 
 
@@ -26,14 +27,16 @@ builder.Services.AddAuthentication(options =>
 {
     options.RequireHttpsMetadata = false;
     options.SaveToken = true;
+    string jwtIssuer = "https://localhost:4200"; // builder.Configuration["Jwt:Issuer"];
+    string jwtAudience = "https://localhost:4200";// builder.Configuration["Jwt:Audience"];
     options.TokenValidationParameters = new TokenValidationParameters
     {
         ValidateIssuer = true,
         ValidateAudience = true,
         ValidateLifetime = true,
         ValidateIssuerSigningKey = true,
-        ValidIssuer = builder.Configuration["Jwt:Issuer"],
-        ValidAudience = builder.Configuration["Jwt:Audience"],
+        ValidIssuer = jwtIssuer,
+        ValidAudience = jwtAudience,
         IssuerSigningKey = new SymmetricSecurityKey(key)
     };
 });
