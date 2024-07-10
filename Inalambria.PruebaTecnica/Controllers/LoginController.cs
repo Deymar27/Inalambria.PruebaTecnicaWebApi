@@ -62,8 +62,9 @@ namespace Inalambria.PruebaTecnica.Controllers
 
         //Creamos metodo para crear reclamaciones y crear el token
         private string Generar(UsuarioModel usua) {
+            string jwtKey = "key_prueba_tecnica_1234567890123456key_prueba_tecnica_1234567890123456"; // _config["Jwt:Key"];
 
-            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
             //Creamos las reclamaciones
             var reclamaciones = new[]
@@ -71,10 +72,11 @@ namespace Inalambria.PruebaTecnica.Controllers
                 new Claim(ClaimTypes.NameIdentifier, usua.usuario),
             };
             //Creamos el token
-
+            string jwtIssuer = "https://localhost:4200"; //  _config["Jwt:Issuer"];
+            string jwtAudience = "https://localhost:4200";//  _config["Jwt:Audience"];
             var token = new JwtSecurityToken(
-                _config["Jwt:Issuer"],
-                _config["Jwt:Audience"],
+                jwtIssuer,
+                jwtAudience,
                 reclamaciones,
                 expires: DateTime.Now.AddMinutes(60),
                 signingCredentials: credentials);
